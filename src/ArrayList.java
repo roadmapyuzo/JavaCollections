@@ -20,12 +20,12 @@ public class ArrayList {
 
         lista.remove((Integer) 30);
 
-        int indexAntigo = lista.indexOf(40);
+        int oldIndex = lista.indexOf(40);
 
-        if (indexAntigo != -1) {
-            lista.set(indexAntigo, 45);
+        if (oldIndex != -1) {
+            lista.set(oldIndex, 45);
         } else {
-            System.out.println("Não tem 40");
+            System.out.println("There is no 40");
         }
 
         for (Integer i : lista) {
@@ -35,12 +35,12 @@ public class ArrayList {
         System.out.println(lista.size());
 
         if (lista.contains((Integer) 20)) {
-            System.out.println("tem 20");
+            System.out.println("There is 20");
         } else {
-            System.out.println("Não tem 20");
+            System.out.println("There is no 20");
         }
 
-        return "Rodou tudo";
+        return "Working fine";
 
     }
 
