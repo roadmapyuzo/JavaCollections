@@ -1,15 +1,16 @@
+import java.util.LinkedList;
 import java.util.List;
 
-public class ArrayList {
-
-    ///  Rápida busca por index
-    ///  Inserções custosas pois precisa criar um novo array
-    ///  Pérmite duplicatas
+public class Lists {
 
     public String Exercicio() {
 
-        /// List não pode ser de tipo primitivo
-        /// Null pode existir em integer
+        /// List cannot be of primitive type
+        /// Null can exist in List
+
+        ///  Fast seartch by index
+        ///  Inserts can be slow
+        ///  Can insert duplicate value
         List<Integer> lista = new java.util.ArrayList<>();
 
         lista.add(10);
@@ -38,6 +39,20 @@ public class ArrayList {
             System.out.println("There is 20");
         } else {
             System.out.println("There is no 20");
+        }
+
+
+        ///  slow search by index
+        ///  fast insert in any position
+        List<String> lista2 = new LinkedList<>();
+
+        lista2.add("Hello");
+        lista2.add("World");
+
+        lista2.remove("Hello");
+
+        for (String s : lista2) {
+            System.out.println(s);
         }
 
         return "Working fine";

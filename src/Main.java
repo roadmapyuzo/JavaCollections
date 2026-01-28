@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList testes = new ArrayList();
+        Lists testes = new Lists();
 
         testes.Exercicio();
 
