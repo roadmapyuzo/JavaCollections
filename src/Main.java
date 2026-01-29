@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Lists testes = new Lists();
+        Queues testes = new Queues();
 
         testes.Exercicio();
 
